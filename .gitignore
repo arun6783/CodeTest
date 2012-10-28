@@ -1,3 +1,10 @@
 _ReSharper*
+Debug
 bin
 obj
+suo
+src/debug
+src/bin
+src/obj
+src/*.suo
+src/*.sln.DotSettings.user

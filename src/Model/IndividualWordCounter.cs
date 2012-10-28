@@ -29,10 +29,10 @@ namespace Model
             {
 
 
-               // MatchCollection matchCollection = Regex.Matches(stringToFindIndividualWord, @"[a-zA-Z0-9\'\-]+",RegexOptions.IgnoreCase);
+                MatchCollection matchCollection = Regex.Matches(stringToFindIndividualWord, @"[a-zA-Z0-9\'\-]+",RegexOptions.IgnoreCase);
 
 
-                string[] matchCollection = stringToFindIndividualWord.ToLowerInvariant().Replace(Environment.NewLine, " ").Split(new string[] { " ", ",", "!", ";", "#", "*" }, StringSplitOptions.RemoveEmptyEntries);
+               // string[] matchCollection = stringToFindIndividualWord.ToLowerInvariant().Replace(Environment.NewLine, " ").Split(new string[] { " ", ",", "!", ";", "#", "*", ".", ":" ,"?","\""}, StringSplitOptions.RemoveEmptyEntries);
                 foreach (var word in matchCollection)
                 {
                     string key = word.ToString().ToLower();
